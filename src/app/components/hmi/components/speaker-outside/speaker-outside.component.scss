@@ -1,0 +1,25 @@
+:host {
+  width: 100%;
+}
+.content{
+  display: flex;
+  border: 2px solid #c3c3c3;
+  border-right-style: dashed;
+  padding: 5em;
+
+  & .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 1px solid #c3c3c3;
+    margin: 0.5em;
+  }
+
+  & .micro-custom-pos{
+    position: absolute;
+    transform: translateX(-5px);
+  }
+}

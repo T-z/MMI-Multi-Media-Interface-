@@ -1,0 +1,58 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c3c3c3;
+  background-color: #031122;
+  padding: 0.4em;
+  > div {
+    display: flex;
+    flex-direction: row;
+
+    &.row2 {
+      flex-wrap: wrap;
+    }
+    &.row1 {
+      > .title {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 1px solid #c3c3c3;
+  margin: 0.1em;
+
+  & .custom-pos{
+    position: absolute;
+    transform: translateX(-2px);
+    font-weight: bold;
+  }
+}
+
+.clickbar {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 1125px) {
+
+  :host {
+    > div {
+      &.row1 {
+        > .title {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+

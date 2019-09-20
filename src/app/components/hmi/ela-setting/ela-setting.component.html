@@ -1,0 +1,29 @@
+<div class="d-flex f-column" >
+   <div class="d-flex align-items-center ml-auto">
+     <div class="circle bg-dunkles-nachtblau">
+      <img class="w3" src="./assets/icons/icons8-lautsprecher-100.png"/>
+      <span class="c-black custom-pos"> A </span>
+    </div>
+     <div> <img class="w4 mr-5" src="./assets/icons/icons8-ruhig-100.png" /> </div>
+     <div class="d-flex f-column timer-bloc">
+         <div class="d-flex">
+          <input type="time"  value="22:00" class="bg-dunkles-nachtblau c-grau m-1 input-time" (change)="changeTime($event,0)">
+           <img class="w3 ml-3" src="./assets/icons/icons8-stumm-250.png" />
+        </div>
+         <div class="d-flex">
+          <input type="time" value="06:00" class="bg-dunkles-nachtblau c-grau m-1 input-time" (change)="changeTime($event)">
+          <img class="w3 ml-3" src="./assets/icons/icons8-lautsprecher-100.png" />
+       </div>
+     </div>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-center">
+      <app-speaker-inside></app-speaker-inside>
+      <div class="outside">
+      <app-speaker-outside></app-speaker-outside>
+    </div>
+  </div>
+
+</div>
+
+

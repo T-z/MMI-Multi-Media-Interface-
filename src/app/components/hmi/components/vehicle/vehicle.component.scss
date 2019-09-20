@@ -1,0 +1,46 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 0.5em 0 0;
+}
+.arc-left{
+  height: 2em;
+  width: 1.5em;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border: 1px solid #c3c3c3;
+  // transform: rotate(270deg)
+}
+.arc-right{
+  height: 2em;
+  width: 1.5em;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: 1px solid #c3c3c3;
+  // transform: rotate(270deg)
+}
+
+.content{
+  width: 8em;
+  border: 2px solid #c3c3c3;
+}
+.title{
+  text-align: center;
+  font-size: 13px;
+}
+.custom-icon{
+  font-size: 1.2em;
+  height: unset;
+}
+.bold{
+  font-weight: bold;
+}
+
+
+@media (max-width: 1125px) {
+
+  .title{
+    text-align: center;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="f-gr9 item m-1">
+  <app-itinerary></app-itinerary>
+</div>
+<div class="f-gr1 item m-1 d-flex f-column align-items-center justify-content-end">
+  <div *ngIf="!is_muted" class="circle bg-dunkles-nachtblau" (click)="mute(true)">  <img class="w2" src="./assets/icons/icons8-stumm-250.png" /> </div>
+  <div *ngIf="is_muted" class="circle bg-blau" (click)="mute(false)">  <img class="w2" src="./assets/icons/icons8-stumm-250.png" /> </div>
+  <div class="circle bg-dunkles-nachtblau" (click)="repeat_anouncement">  <img class="w2" src="./assets/icons/icons8-synchronisieren-96.png" /> </div>
+  <div *ngIf="" class="circle bg-blau" (click)="repeat_anouncement">  <img class="w2" src="./assets/icons/icons8-synchronisieren-96.png" /> </div>
+  <div class="circle bg-dunkles-nachtblau ">  <img class="w2" src="./assets/icons/icons8-normal-screen-50.png" /> </div>
+  <div *ngIf="" class="circle bg-blau">  <img class="w2" src="./assets/icons/icons8-normal-screen-50.png" /> </div>
+</div>
+<div class="break"></div> <!-- break -->
+<div class="f-gr8 bottom-item m-1 bg-grau d-flex align-items-center">
+  <div class="c-black m-1 weisung"> Anschluss S4 abwarten </div>
+  <div class="circle bg-dunkles-nachtblau ml-auto">  <img class="w2" src="" /> </div>
+</div>
+<div class="f-gr2 bottom-item m-1 d-flex align-items-center">
+  <div class="circle bg-dunkles-nachtblau">  <img class="w2" src="./assets/icons/icons8-stumm-250.png" /> </div>
+  <div class="circle bg-dunkles-nachtblau">  <img class="w2" src="./assets/icons/icons8-synchronisieren-96.png" /> </div>
+  <div class="circle bg-dunkles-nachtblau">  <img class="w2" src="./assets/icons/icons8-normal-screen-50.png" /> </div>
+</div>

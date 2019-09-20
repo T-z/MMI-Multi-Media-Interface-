@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  > div {
+      border: 1px solid #c3c3c3;
+      width: 9.8%;
+      height: 5em;
+      background-color: #21314a;
+      color:#ffffff;
+       &:hover {
+         cursor: pointer;
+         opacity:0.9;
+       }
+  }
+}

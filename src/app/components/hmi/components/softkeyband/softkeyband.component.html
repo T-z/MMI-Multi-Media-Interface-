@@ -1,0 +1,58 @@
+
+<!-- Box 1  -->
+<div class="d-flex align-items-center justify-content-center"  routerLink="/fis">
+  <span *ngIf="!is_in_init"><img class="w3" src="" /></span>
+</div>
+
+<!-- Box sounds  -->
+<div class="d-flex align-items-center justify-content-center"  routerLink="/ela">
+  <span *ngIf="!is_in_init"><img class="w3" src="./assets/icons/icons8-lautsprecher-100.png" /></span>
+</div>
+
+<!-- Box phone call  -->
+<div class="d-flex align-items-center justify-content-center"  routerLink="/talk">
+  <span *ngIf="!is_in_init"><img class="w3" src="./assets/icons/icons8-telefon-100.png" /></span>
+</div>
+
+<!-- Box webcam  -->
+<div class="d-flex align-items-center justify-content-center"  routerLink="/video">
+  <span *ngIf="!is_in_init"><img class="w3" src="./assets/icons/icons8-dome-kamera-240.png" /></span>
+</div>
+
+<!-- Box 5  -->
+<div class="d-flex align-items-center justify-content-center"  routerLink="/mirror">
+  <span *ngIf="!is_in_init"><img class="w3" src="./assets/icons/icons8-full-screen-50.png" /></span>
+</div>
+
+
+<!-- Box 6  -->
+<div class="d-flex align-items-center justify-content-center">
+  <span *ngIf="!is_in_init"><img class="w3" src="./assets/icons/icons8-schraubenschlüssel-96.png"/></span>
+</div>
+
+<!-- ELA Settings  -->
+<div>
+  <div *ngIf="!is_in_init" class="d-flex align-items-center justify-content-center"  routerLink="/ela/setting">
+     <img class="w2" src="./assets/icons/icons8-lautsprecher-100.png" />
+     <img class="w2 mt-10" src="./assets/icons/icons8-einstellungen-100.png" />
+  </div>
+</div>
+
+
+<!-- special announcement -->
+<div>
+  <div *ngIf="!is_in_init" class="d-flex align-items-center justify-content-center"  routerLink="/announcement">
+     <img class="w2" src="./assets/icons/icons8-lautsprecher-100.png" />
+     <img class="w2 mt-10" src="./assets/icons/icons8-stern-100.png" />
+  </div>
+</div>
+
+<!-- RBL Signal   -->
+<div class="d-flex align-items-center justify-content-center" routerLink="/rbl/announcement">
+  <span *ngIf="!is_in_init"><img class="w3" src="./assets/icons/icons8-smart-home-verbindung-90.png" /></span>
+</div>
+
+<!-- Current Route selection -->
+<div class="d-flex align-items-center justify-content-center"  routerLink="/routes">
+    <span *ngIf="!is_in_init"><img class="w3" src="./assets/icons/icons8-route-256.png" /></span>
+</div>

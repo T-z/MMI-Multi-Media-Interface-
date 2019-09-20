@@ -1,0 +1,14 @@
+<app-statusbox></app-statusbox>
+<div *ngIf="is_in_init" class="bg-helles-nachtblau" >
+     <div class="content d-flex align-items-center justify-content-center">
+       <app-start-display></app-start-display>
+     </div>
+     <div class="d-flex justify-content-end ">
+       <img src="assets/images/logo_white.png" style="max-height: 80%;max-width: 450px;" alt="Stadler_Logo">
+     </div>
+ </div>
+<div *ngIf="!is_in_init" class="content bg-dunkleblau">
+  <router-outlet></router-outlet>
+</div>
+<app-softkeyband></app-softkeyband>
+

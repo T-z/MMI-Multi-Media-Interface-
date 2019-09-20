@@ -1,0 +1,42 @@
+
+:host {
+  display: block;
+  padding:5em;
+
+  & .input-time {
+
+    font-size: 25px;
+  }
+}
+.outside{
+  display: flex;
+  flex: 3;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.timer-bloc {
+  margin-bottom: 2em;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 1px solid #c3c3c3;
+  margin-right: 5em;
+}
+
+.custom-pos{
+  position: absolute;
+  transform: translateX(-5px);
+  font-weight: bold;
+  font-size: 22px;
+  font-family: monospace;
+}

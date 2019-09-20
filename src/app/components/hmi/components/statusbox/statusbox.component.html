@@ -1,0 +1,30 @@
+<div class="row1">
+   <div class="d-flex" *ngIf="!is_in_init">
+      <div class="circle"> <img class="w2" src="./assets/icons/icons8-marker-100_weiss.png" /> </div>
+      <div class="circle"> <img class="w2" src="./assets/icons/icons8-smart-home-verbindung-90.png" /></div>
+      <div  class="circle"> <img class="w2" src="./assets/icons/icons8-sound-lautsprecher-100.png" /> </div>
+      <div  class="circle"> <img class="w2" src="./assets/icons/icons8-lautsprecher-100.png" /> </div>
+      <div  class="circle">
+          <span class="c-white custom-pos c-black"> 3 </span>
+          <img class="w2" src="./assets/icons/icons8-lautsprecher-100.png" />
+      </div>
+      <div  class="circle"> <img class="w2" src="./assets/icons/icons8-werbung-100.png" /> </div>
+  </div>
+   <div class="f-gr2 c-grau d-flex align-items-center justify-content-center title"> {{ title }} </div>
+   <div *ngIf="!is_in_init" class="c-grau d-flex f-column  align-items-center justify-content-center ml-auto mr-8">
+          <span>{{ currentDate | date:'H:mm:ss'}}</span>
+          <span>{{ currentDate | date:'dd.MM.yyyy'}}</span>
+  </div>
+   <div class="circle bg-dunkles-nachtblau clickbar ml-auto" routerLink="/ela/setting">
+      <img class="w2" src="./assets/icons/icons8-einstellungen-100.png"/>
+   </div>
+</div>
+
+<div *ngIf="!is_in_init" class="row2 c-white" >
+  <div class="d-flex"  *ngFor="let vehicle of vehicles">
+      <app-vehicle class="item-v">{{vehicle}}</app-vehicle>
+  </div>
+  <div class="ml-auto">
+     <img class="w2 mt-10" src="./assets/icons/icons8-lautsprecher-100.png" />
+  </div>
+</div>
